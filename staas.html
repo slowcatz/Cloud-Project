@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Storage as a Service</title>
+</head>
+
+<body>
+
+<center>
+<h1>Welcome to S-Cloud</h1>
+<h2>Storage as a Service (StaaS)</h2>
+<h3>Select the storage specifications you want</h3>
+</center>
+
+<form action=http://192.168.43.2/cgi-bin/staas.py method='POST'>
+Choose storage type : 
+<select name='type'>
+	<option value='block'>Block Storage</option>
+	<option value='object'>Object Storage</option>
+</select>
+
+Choose Storage Name : <input name='name'>
+Size (in GB) : <input type='number' name='size'>
+
+<input type='submit' value='Create'>
+
+</form>
+</body>
+</html>

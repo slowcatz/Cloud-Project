@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Infrastructure as a Service</title>
+</head>
+
+<body>
+
+<center>
+<h1>Welcome to S-Cloud</h1>
+<h2>Infrastructure as a Service (IaaS)</h2>
+<h3>Select the specifications you want in your instance</h3>
+</center>
+
+<form action=/cgi-bin/iaas.py method='POST'>
+Choose an operating system : 
+<select name='os'>
+	<option value='ubuntu'>Ubuntu</option>
+	<option value='rhel72'>Rhel 7.2</option>
+	<option value='windows7'>Windows 7</option>
+</select>
+RAM : 
+<select name='ram'>
+	<option value='512'>512MB</option>
+	<option value='1024'>1GB</option>
+	<option value='2048'>2GB</option>
+</select>
+CPU : 
+<select name='cpu'>
+	<option value='1'>1 Core</option>
+	<option value='2'>2 Core</option>
+</select>
+<br><br>
+Create Remote Password : 
+<input type='password' name='passwd'>
+<input type='submit' value='Create'>
+
+</form>
+</body>
+</html>
