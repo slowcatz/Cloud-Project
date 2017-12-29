@@ -5,12 +5,12 @@
 
 <body>
 
-<form action="/cgi-bin/register.py" method="POST">
-Name: <input name="fname"><input name="lname"><br>
-Username: <input name="user"><br>
-Password: <input type="password" name="pass1"><br>
-Confirm Password: <input type="password" name="pass2"><br>
-email: <input type="email" name="email"><br>
+<form action="http://127.0.0.1/cgi-bin/register.py" method="POST">
+Name: <input name="fname" required><input name="lname" required><br>
+Username: <input name="user" required><br>
+Password: <input type="password" name="pass1" required><br>
+Confirm Password: <input type="password" name="pass2" required><br>
+email: <input type="email" name="email" required><br>
 <br><br>
 <input type="submit" value="Register">
 </form>

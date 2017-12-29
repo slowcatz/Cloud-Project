@@ -7,17 +7,16 @@
 <h3>Please Log In to Continue...</h3>
 
 <form action="http://127.0.0.1/cgi-bin/homepage.py" method="POST">
-username : <input name='username' placeholder='Username'>
-password : <input type='password' name='password' placeholder='Password'>
+username : <input name='username' placeholder='Username' required>
+password : <input type='password' name='password' placeholder='Password' required>
 <input type="submit" value="Log In">
 </form>
 <p id =ok></p>
 
 <br/><br/><br/><br/><br/>
 
-<form action="http://127.0.0.1/register.html" method="POST">
-New user? <input type="submit" value='Register'>
-</form>
+
+New user? <a href="http://127.0.0.1/register.html"><button>Register</button></a>
 
 </body>
 </html>

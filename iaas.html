@@ -3,7 +3,7 @@
 <title>Infrastructure as a Service</title>
 </head>
 
-<body>
+<body bgcolor='crane'>
 
 <center>
 <h1>Welcome to S-Cloud</h1>
@@ -11,7 +11,7 @@
 <h3>Select the specifications you want in your instance</h3>
 </center>
 
-<form action=/cgi-bin/iaas.py method='POST'>
+<form action=http://127.0.0.1/cgi-bin/iaas.py method='POST'>
 Choose an operating system : 
 <select name='os'>
 	<option value='ubuntu'>Ubuntu</option>
@@ -35,5 +35,6 @@ Create Remote Password :
 <input type='submit' value='Create'>
 
 </form>
+
 </body>
 </html>

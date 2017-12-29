@@ -43,8 +43,8 @@ f1.close()
 
 commands.getoutput("sudo exportfs -r")
 
-f2 = open("/var/www/html/"+name+"/"+name+".txt","w")
-x = "#!/bin/bash\nsudo mkdir /mnt/"+name+"\nmount 192.168.43.2:/var/www/html/"+name+" /mnt/"+name
+f2 = open("/var/www/html/"+name+"/"+name,"w")
+x = "#!/bin/bash\nsudo mkdir /mnt/"+name+"\nmount 127.0.0.1:/var/www/html/"+name+" /mnt/"+name
 f2.write(x)
 f2.close()
 commands.getoutput("sudo chmod +x /var/www/html/"+name+"/"+name)
